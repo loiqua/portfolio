@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { ExternalLink, Layers } from 'lucide-react';
 import { projects } from '@/data/portfolio-data';
 
@@ -27,11 +28,22 @@ const Projects = () => {
               key={project.title}
               className="group bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg hover:shadow-xl sm:hover:shadow-2xl transition-all duration-300 sm:duration-500 overflow-hidden hover:-translate-y-1 sm:hover:-translate-y-2"
             >
-              <div className="aspect-video bg-gradient-to-br from-blue-50 to-purple-50 sm:from-blue-100 sm:to-purple-100 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 sm:from-blue-600/20 sm:to-purple-600/20 group-hover:from-blue-600/20 sm:group-hover:from-blue-600/30 sm:group-hover:to-purple-600/30 transition-all duration-300 sm:duration-500"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Layers className="w-12 h-12 sm:w-16 sm:h-16 text-blue-600/30 sm:text-blue-600/50" />
-                </div>
+              <div className={`aspect-video relative overflow-hidden ${project.image.startsWith('https://images.unsplash.com') ? 'bg-gradient-to-br from-blue-50 to-purple-50 sm:from-blue-100 sm:to-purple-100' : ''}`}>
+                {project.image.startsWith('https://images.unsplash.com') ? (
+                    <>
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 sm:from-blue-600/20 sm:to-purple-600/20 group-hover:from-blue-600/20 sm:group-hover:from-blue-600/30 sm:group-hover:to-purple-600/30 transition-all duration-300 sm:duration-500"></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <Layers className="w-12 h-12 sm:w-16 sm:h-16 text-blue-600/30 sm:text-blue-600/50" />
+                        </div>
+                    </>
+                ) : (
+                    <Image
+                        src={project.image}
+                        alt={`Image du projet ${project.title}`}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                )}
               </div>
               
               <div className="p-4 sm:p-5 md:p-6">

@@ -2,11 +2,11 @@ import { Code, Database, Settings } from 'lucide-react';
 
 export const projects = [
   {
-    title: "Gestion de Voitures",
-    description: "Application web complète avec dashboard admin pour la gestion d'un parc automobile, utilisant les technologies modernes du stack JavaScript.",
-    image: "https://images.unsplash.com/photo-1551522435-a131bf5e493b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["Next.js", "React Admin", "TypeScript", "Node.js"],
-    link: "https://github.com/loicqua/car-management-app"
+    title: "Plateforme de Vente de Véhicules",
+    description: "CarShow est une application web full-stack pour présenter et gérer un catalogue de voitures de luxe. Basée sur Next.js 15, elle offre une navigation rapide et des fonctionnalités de recherche, filtrage et prise de rendez-vous.",
+    image: "/car.png",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "NextAuth.js", "shadcn/ui", "Zod"],
+    link: "https://carshow-one.vercel.app/"
   },
   {
     title: "Recommandations de Jeux",
