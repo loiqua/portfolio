@@ -9,18 +9,18 @@ export const projects = [
     link: "https://carshow-one.vercel.app/"
   },
   {
-    title: "Recommandations de Jeux",
-    description: "Un site web simple et élégant pour découvrir des recommandations de jeux vidéo, entièrement codé en HTML et CSS.",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["HTML5", "CSS3", "Responsive Design"],
-    link: "https://github.com/loicqua/game-reco-site"
+    title: "Simulation Menu USSD",
+    description: "Simulation d’un menu USSD Telma (MVola) en TypeScript, inspiré des menus interactifs comme #111*1#.",
+    image: "/yas.jpg",
+    tags: ["TypeScript", "Shell"],
+    link: "https://github.com/loiqua/USSD-TELMA"
   },
   {
     title: "Lecteur de Musique Mobile",
     description: "Une application mobile cross-platform pour écouter de la musique, développée avec React Native pour une expérience utilisateur fluide.",
-    image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["React Native", "Expo", "JavaScript"],
-    link: "https://github.com/loicqua/music-player-native"
+    image: "/music.png",
+    tags: ["React Native", "Expo", "TypeScript"],
+    link: "https://drive.google.com/file/d/1LBR3zq8AJjiDn6EhqBgqFbDolKr8RquA/view"
   }
 ];
 
